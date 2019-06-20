@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.clearfix::after{
+    content: " ";
+    clear: both;
+    display: block;    
+}
+
+
+.container{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+}
+
+header{
+    width: 100%;
+    height: 13%;
+    background-color: red;
+    
+}
+
+.section{
+    background-color: aqua;
+    width: 100%;
+    height: 90%;
+   
+    
+}
+
+.article{
+    background-color: aliceblue;
+    margin: 0 25%;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    height: 5%;
+    flex-shrink: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-sec{
+    flex: 1 0 auto;
+}
+
+.my-name{
+    text-transform: uppercase;
+}
+
+/****
+.navi-btns{
+    
+}
+
+***/
+
+.navi-btns li{
+    display: inline-block;
+
+}
+.navi-btns li a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+
+
+@media screen and (max-width: 426px){
+    .navi{
+        text-align:  center;
+        padding: 5px;
+        
+    }
+
+    .article{
+        margin: 0.5% 0.5%;
+        height: 100%;
+        
+       
+    }
+
+    .section{
+        padding-top: 0;
+        overflow: hidden;
+    }
+
+
+
+
+}
+
+@media screen and (min-width:427px) and (max-width: 1024px ){
+
+    .my-name{
+      
+     float: left;
+
+    }
+
+    .navi-btns{
+        float: right;
+    }
+
+    .navi{
+        margin: 0 10%;
+    }
+
+    .article{
+        padding: 20px;
+       
+    }
+
+    .section{
+        padding-top: 10%;
+    }
+
+}
